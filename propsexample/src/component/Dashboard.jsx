@@ -1,8 +1,13 @@
 import React from 'react'
-
-function Dashboard() {
+import Employee from './Employee'
+function Dashboard({
+    data
+}) {
     return (
-        <></>
+        <>
+        <Employee data={data}/>
+        <div>Welcome{data}</div>
+        </>
     )
 }
 

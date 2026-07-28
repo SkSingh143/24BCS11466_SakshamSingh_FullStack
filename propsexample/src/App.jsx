@@ -4,32 +4,30 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import Welcome from './component/Welcome'
+import Dashboard from './component/Dashboard'
+
 function App() {
   const [count, setCount] = useState(0)
-  const [student,setStudent]=useState([
+  const [employee,setEmployee]=useState([
     {
       id:1,
-    name:"employee1",
+    name:"Saksham",
     leave:12
     },{
       id:1,
-    name:"employee1",
+    name:"Arpit",
     leave:12
     },{
       id:1,
-    name:"employee1",
+    name:"Dost",
     leave:12
     }
   ])
   const studentData=["good","bad"]
   return (
     <>
-      {student.map((item)=>(
-        <Welcome name={item}/>
-      ))}
-      {studentData.map((item)=>{
-       return (<div><Welcome name={item}/></div>)
-      })}
+
+      <Dashboard data={employee}/>
     </>
   )
 }

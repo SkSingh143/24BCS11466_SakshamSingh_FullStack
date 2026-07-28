@@ -1,8 +1,11 @@
 import React from 'react'
+import LeaveForm from './LeaveForm'
 
-function Employee() {
+function Employee({data}) {
     return (
-        <></>
+        <>
+        
+        <LeaveForm data={data} /></>
     )
 }
 
